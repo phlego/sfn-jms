@@ -24,13 +24,13 @@ public class HelloListener {
         System.out.println("🟢 I've got a message!");
         System.out.println(helloWorldMessage);
 
-        headers.computeIfPresent("jms_redelivered", (k1, isRedelivery) -> {
-            headers.computeIfPresent("JMSXDeliveryCount", (k2, count) -> {
-                System.out.println("Redelivery count: " + count);
-                return count;
-            });
-            return isRedelivery;
-        });
+//        headers.computeIfPresent("jms_redelivered", (k1, isRedelivery) -> {
+//            headers.computeIfPresent("JMSXDeliveryCount", (k2, count) -> {
+//                System.out.println("Redelivery count: " + count);
+//                return count;
+//            });
+//            return isRedelivery;
+//        });
 
         System.out.println("\n\n");
 //        throw new RuntimeException("XXX");
