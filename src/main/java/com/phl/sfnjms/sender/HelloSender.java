@@ -23,6 +23,6 @@ public class HelloSender {
         HelloWorldMessage message = new HelloWorldMessage(UUID.randomUUID(), "Hallo Welt");
         jmsTemplate.convertAndSend(MY_QUEUE, message);
 
-        System.out.println("✅ Message sent!");
+        System.out.println("🟠 Message sent!");
     }
 }
